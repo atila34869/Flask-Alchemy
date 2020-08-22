@@ -79,6 +79,6 @@ def delete_task(id):
     db.session.delete(task)
     db.session.commit()
     return task_schema.jsonify(task)
-
+#esto se tiene que borrar
 if __name__ =='__main__':
     app.run(debug=True)
